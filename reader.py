@@ -24,7 +24,7 @@ def choose_world_file():
 
     for i in range(len(world_files)):
         world_file_name = ntpath.basename(world_files[i])
-        prompt = "{}{}: {}\n".format(prompt, i + 1, world_file_name.replace(".db", "")) #.replace("8uuuuD", "SomeWorld"))
+        prompt = "{}{}: {}\n".format(prompt, i + 1, world_file_name.replace(".db", ""))
 
     prompt = "{}Select a world to read (1-{}): ".format(prompt, len(world_files))
 
